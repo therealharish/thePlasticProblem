@@ -1,11 +1,17 @@
 import './App.css';
-import backgroundVideo from './components/videos/backgroundVideo.mp4'
+import backgroundVideo from './components/videos/backgroundVid2.mp4'
+import facebook from './components/icons/facebook.png'
+import instagram from './components/icons/instagram.png'
+import twitter from './components/icons/twitter.png'
+
+
+
 function App() {
   return (
     <div>
       <section className = "showcase">
         <header>
-          <div>Title</div>
+          <div className = "logo">wellwecare</div>
           <div className = "toggle"></div>
         </header>
         <video src = {backgroundVideo} type = "video/mp4" muted loop autoPlay></video>
@@ -14,13 +20,25 @@ function App() {
         <div className = "text">
           <h2>The Plastic Problem</h2>
           <h3>Tell leaders that a global treaty is needed to address the plastics crisis.</h3>
-          <button className = "btn" variant="contained" color="primary">Sign the Petition</button>
+          <a href = "https://www.plasticpollutioncoalition.org/" className = "btn">Learn More</a>
         </div>
 
         <ul class = "social">
-          <li><img src = "facebook.png" alt =""/></li>
-          <li><img src = "instagram.png" alt =""/></li>
-          <li><img src = "twitter.png" alt =""/></li>
+          <li>
+            <a href = "#">
+              <img src = {facebook} alt ="" width = "20" height = "20"/>
+            </a>
+          </li>
+          <li>
+            <a href = "#">
+              <img src = {instagram} alt =""width = "20" height = "20"/>
+            </a>
+          </li>
+          <li>
+            <a href = "#">
+             <img src = {twitter} alt =""width = "20" height = "20"/>
+            </a>
+          </li>
         </ul>
 
         <div className='Menu'>
