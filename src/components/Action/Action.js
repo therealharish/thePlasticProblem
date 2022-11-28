@@ -23,7 +23,7 @@ const Action = () => {
     return (
         <div>
             <div className="headImage" style={{
-                backgroundSize: 160 - offsetY / 12 + "%",
+                backgroundSize: 160 - offsetY /12 + "%",
                 opacity: 1 - offsetY / 700,
             }}></div>
             <div className="contain ">
@@ -40,34 +40,29 @@ const Action = () => {
                     <br />
                     <ul>
                         <li>Enhance and finance waste management programs</li>
-                        
+
                         <li>Create a nationwide refund program for beverage containers</li>
-                        
+
                         <li>Ban non-recyclable single-use plastic products and bags</li>
-                        
+
                         <li>Encourage the use of recycled materials</li>
-                        
+
                         <li>Spur investment in recycling and composting infrastructure</li>
-                        
+
                         <li>Stop waste from being shipped to developing countries</li>
-                        
+
                         <li>Ensure local and state policies can effectively implement standards</li>
-                        
+
                         <li>Temporarily pause new plastic facilities until EPA issues updates regulations</li>
-                    </ul>  
+                    </ul>
                     <br />
-                    <p>This is the most comprehensive federal plastic pollution policy ever enacted.</p>  
+                    <p>This is the most comprehensive federal plastic pollution policy ever enacted.</p>
                     <br />
                     <h2>Add your name below to urge our leaders to break free from plastic. Then, help build momentum by sharing the campaign on Facebook and Twitter.
-</h2>            
+                    </h2>
                 </div>
-                <img src={actionheadImage} className="paraImage" alt="plasticBeachWaste" width="800px" maxheight="500px" />
-                <div className="midPara animate__animated animate__fadeIn  ">
-                    <p>Consumers have been sold on the myth that recycling is a comprehensive solution, fueled by the powerful oil and gas industry, which has committed hundreds of billions of dollars to expanding plastic production. In reality, a garbage truck's worth of plastic clogs and pollutes the ocean every minute, and as many as 51 trillion pieces of plastic choke every square mile of those valuable waters. Nonetheless, less than 10% of all plastics produced are recycled. Without action, there may be more plastic in the ocean than fish by 2050.</p>
-                </div>
-                <a href = "/more" className="btn">Take Action</a>
                 <SignIn />
-
+                <br></br>
             </div>
         </div>
     );
