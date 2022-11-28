@@ -5,20 +5,19 @@ import "./Challenge.css"
 
 
 const Challenge = () => {
-    return ( 
+    return (
         <Container>
-        <div className = "contain">
-            <div className = "Row">
-            <div className = "Col">
-                <h1>Hi</h1>
-            </div>
-            <div className = "Col">
-                <h1>Hi!</h1>
-            </div>
-            </div>
-        </div>
+            <Row>
+                <Col>1 of 2</Col>
+                <Col>2 of 2</Col>
+            </Row>
+            <Row>
+                <Col>1 of 3</Col>
+                <Col>2 of 3</Col>
+                <Col>3 of 3</Col>
+            </Row>
         </Container>
-     );
+    );
 }
- 
+
 export default Challenge;
