@@ -1,9 +1,13 @@
+
+import {React} from 'react'
 import {useState} from 'react';
 import './Home.css';
 import backgroundVideo from '../videos/backgroundVid2.mp4'
 import facebook from '../icons/facebook.png'
 import instagram from '../icons/instagram.png'
 import twitter from '../icons/twitter.png'
+import More from "../More/More";
+import {Link} from "react-router-dom"
 
 
 
@@ -28,7 +32,9 @@ const Home = () => {
         <div className="text">
           <h2>The Plastic Problem</h2>
           <h3>Tell leaders that a global treaty is needed to address the plastics crisis.</h3>
-          <a href="https://www.plasticpollutioncoalition.org/" className="btn">Learn More</a>
+          <Link to="/more">
+          <a href = "../More/More.js" className="btn">Learn More</a>
+          </Link>
         </div>
 
         <ul class="social">
