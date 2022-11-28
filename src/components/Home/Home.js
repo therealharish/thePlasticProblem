@@ -8,6 +8,8 @@ import instagram from '../icons/instagram.png'
 import twitter from '../icons/twitter.png'
 import More from "../More/More";
 import {Link} from "react-router-dom"
+import Nav from '../Nav/Nav'
+import 'animate.css'
 
 
 
@@ -32,9 +34,7 @@ const Home = () => {
         <div className="text">
           <h2>The Plastic Problem</h2>
           <h3>Tell leaders that a global treaty is needed to address the plastics crisis.</h3>
-          <Link to="/more">
-          <a href = "../More/More.js" className="btn">Learn More</a>
-          </Link>
+            <a href = "/more" className="animate__fadeInUp">Learn More</a>
         </div>
 
         <ul class="social">
@@ -55,13 +55,7 @@ const Home = () => {
           </li>
         </ul>
       </section>
-      <div className='menu'>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+      <Nav />
     </div>
   );
 }

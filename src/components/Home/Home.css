@@ -89,6 +89,8 @@
 }
 
 
+
+
 .text {
   position: absolute;
   z-index: 10;
@@ -126,7 +128,7 @@
   color: #111;
   text-transform: uppercase;
   letter-spacing: 2px;
-  transition: 0.2s;
+  transition: 0.5s;
   max-width: fit-content;
   border-radius: 35px;
 }

@@ -1,0 +1,69 @@
+.contain {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+.midPara {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 80px 100px;
+    flex-direction: column;
+}
+
+.headImage {  
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    background: url("../images/headImage.jpg");
+    background-size: 160%;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+.headImage.active {
+    background-size: calc(100 - +window.pageYOffset/12+"%");
+}
+
+.paraImage {
+    border-radius: 10px;
+    width: 800px;
+    height: 500px;
+    max-width: 100%;
+}
+
+.image1 {
+    position: relative;
+    border-radius: 100px;
+    margin-left: 100px;
+}
+
+.midPara ul {
+    padding-left: 50px;
+}
+
+
+
+.form {
+    border: white 1px solid;
+}
+
+@media screen and (max-width: 500px) {
+    .paraImage {
+        width: 400px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,81 @@
+.contain {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+.midPara {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 80px 100px;
+    flex-direction: column;
+}
+
+.headImage {  
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    background: url("../images/headImage.jpg");
+    background-size: 160%;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+.headImage.active {
+    background-size: calc(100 - +window.pageYOffset/12+"%");
+}
+
+.paraImage {
+    border-radius: 10px;
+    width: 800px;
+    height: 500px;
+    max-width: 100%;
+}
+
+.image1 {
+    position: relative;
+    border-radius: 100px;
+    margin-left: 100px;
+}
+
+.contain a{
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    font-size: 1em;
+    background: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: fit-content;
+    border-radius: 35px;
+    margin-bottom: 30px;
+  }
+  
+.contain a:hover {
+    background: #111;
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .paraImage {
+        width: 400px;
+        height: 200px;
+    }
+}
