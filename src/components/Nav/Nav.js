@@ -2,9 +2,11 @@ const Nav = () => {
     return (
         <div className='menu'>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/more">More</a></li>
+                <li><a href="/action">Action</a></li>
+                <li><a href="/challenge">Challenge</a></li>
+                <li><a href="/about">About</a></li>
             </ul>
         </div>
     );

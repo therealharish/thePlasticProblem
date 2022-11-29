@@ -9,7 +9,7 @@ function BasicExample() {
   return (
     <Navbar className = "color-nav" variant = "dark" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Plastic Solutions</Navbar.Brand>
+        <Navbar.Brand href="/">Plastic Solutions</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -17,6 +17,7 @@ function BasicExample() {
             <Nav.Link href="/more">Learn More</Nav.Link>
             <Nav.Link href="/action">Action</Nav.Link>
             <Nav.Link href="/challenge">Challenge</Nav.Link>
+            <Nav.Link href="/aboutus">About</Nav.Link>
             
           </Nav>
         </Navbar.Collapse>

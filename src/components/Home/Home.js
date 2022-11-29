@@ -26,7 +26,7 @@ const Home = () => {
     <div>
       <section className={!isActive ? "showcase": "showcase active"}>
         <header>
-          <div className="logo">wellwecare</div>
+          <div className="logo">Plastic Solutions</div>
           <div className={!isActive ? "toggle": "toggle active"} onClick = {handleClick}></div>
         </header>
         <video src={backgroundVideo} type="video/mp4" muted loop autoPlay></video>

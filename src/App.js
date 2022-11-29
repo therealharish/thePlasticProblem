@@ -6,6 +6,7 @@ import Action from "./components/Action/Action";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Challenge from './components/Challenge/Challenge';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import About from './components/About/About';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/more" element={<More />} />
           <Route exact path="/action" element={<Action />} />
           <Route exact path="/challenge" element={<Challenge />} />
+          <Route exact path="/aboutus" element={<About />} />
         </Routes>
       </div>
     </Router>

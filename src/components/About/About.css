@@ -1,0 +1,177 @@
+
+
+.contain {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+
+.headingPara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 60px 80px;
+    flex-direction: column;
+}
+
+.aboutimage {
+    border-radius: 35px;
+}
+
+.pointers {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.whyNow {
+    margin: 50px 0px;
+    align-items: center;
+}
+
+.whyNowImages {
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.whyNowText {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.whyNowText h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.whyNowText p {
+    font-size: 14px;
+}
+
+
+
+.midPara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 80px 100px;
+    flex-direction: column;
+}
+.midPara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 80px 100px;
+    flex-direction: column;
+}
+
+.midPara ul li {
+    list-style-type: circle;
+    margin: 10px 0;
+}
+
+.logo {
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+.toggle {
+position: relative;
+width: 60px;
+height: 60px;
+background: url("../icons/menu.png");
+background-repeat: no-repeat;
+background-size: 30px;
+background-position: center;
+cursor: pointer;
+}
+
+.toggle.active {
+background: url("../icons/close.png");
+background-repeat: no-repeat;
+background-size: 30px;
+background-position: center;
+cursor: pointer;
+filter: invert(1);
+}
+
+
+.headImage {  
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    background: url("../images/headImage.jpg");
+    background-size: 160%;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+.headImage.active {
+    background-size: calc(100 - +window.pageYOffset/12+"%");
+}
+
+.paraImage {
+    border-radius: 10px;
+    width: 800px;
+    height: 500px;
+    max-width: 100%;
+}
+
+.image1 {
+    position: relative;
+    border-radius: 100px;
+    margin-left: 100px;
+}
+
+.midPara ul {
+    padding-left: 50px;
+}
+
+
+
+.form {
+    border: white 1px solid;
+}
+
+@media screen and (max-width: 500px) {
+    .paraImage {
+        width: 400px;
+        height: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 789px) {
+    .heading {
+        margin: 10px 25px;
+    }
+    .midPara {
+        margin: 50px 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .heading {
+        margin: 10px 25px;
+    }
+    .headingPara {
+        font-size: 10px;
+        margin: 50px 25px;
+    }
+}
+
+
