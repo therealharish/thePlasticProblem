@@ -5,6 +5,7 @@ import "./Action.css"
 import headVideo from "../videos/backgroundVideo.mp4"
 import actionheadImage from "../images/headImage.jpg"
 import SignIn from './SingIn'
+import Navigation from '../Navigation'
 
 
 const Action = () => {
@@ -22,6 +23,7 @@ const Action = () => {
 
     return (
         <div>
+            <Navigation />
             <div className="headImage" style={{
                 backgroundSize: 160 - offsetY /12 + "%",
                 opacity: 1 - offsetY / 700,

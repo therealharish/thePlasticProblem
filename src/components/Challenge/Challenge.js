@@ -20,8 +20,9 @@ const Challenge = () => {
                 <br />
                 <br />
                 <br />
-                <h1>Help us plant more <div className="mangroveFont">Mangrove</div> trees!</h1>
-                <p>These remarkable ocean trees are environmental superheroes.</p>
+                <h1 className = "heading">Help us plant more <div className="mangroveFont">Mangrove</div> trees!</h1>
+                <p className = "heading">These remarkable ocean trees are environmental superheroes.</p>
+                <Container >
                 <Row>
                     <Col>
                         <div className="midPara">
@@ -35,6 +36,7 @@ const Challenge = () => {
                         <DonationForm />
                     </Col>
                 </Row>
+                </Container>
                 <div className="midPara">
                     <h2>Our Goal</h2>
                 </div>

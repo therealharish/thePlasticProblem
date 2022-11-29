@@ -116,4 +116,16 @@ filter: invert(1);
         width: 400px;
         height: 200px;
     }
+    
 }
+
+@media screen and (max-width: 789px) {
+    .heading {
+        margin: 10px 25px;
+    }
+    .midPara {
+        margin: 50px 25px;
+    }
+}
+
+
