@@ -5,7 +5,7 @@ import More from "./components/More/More";
 import Action from "./components/Action/Action";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Challenge from './components/Challenge/Challenge';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

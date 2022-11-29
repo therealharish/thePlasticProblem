@@ -1,5 +1,7 @@
+
+
 .contain {
-    position: static;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,6 +12,13 @@
     color: white;
 }
 
+.mangroveFont {
+    font-style: italic;
+    display: inline;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 
@@ -17,10 +26,50 @@
 .midPara {
     display: flex;
     justify-content: center;
+    align-items: center;
     max-width: 600px;
     margin: 80px 100px;
     flex-direction: column;
 }
+.midPara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 80px 100px;
+    flex-direction: column;
+}
+
+.midPara ul li {
+    list-style-type: circle;
+    margin: 10px 0;
+}
+
+.logo {
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+.toggle {
+position: relative;
+width: 60px;
+height: 60px;
+background: url("../icons/menu.png");
+background-repeat: no-repeat;
+background-size: 30px;
+background-position: center;
+cursor: pointer;
+}
+
+.toggle.active {
+background: url("../icons/close.png");
+background-repeat: no-repeat;
+background-size: 30px;
+background-position: center;
+cursor: pointer;
+filter: invert(1);
+}
+
 
 .headImage {  
     position: relative;

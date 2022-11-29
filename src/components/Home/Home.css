@@ -136,6 +136,7 @@
 .text a:hover {
   background: #111;
   color: white;
+  text-decoration: none;
 }
 
 .social {

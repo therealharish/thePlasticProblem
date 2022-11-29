@@ -10,6 +10,15 @@
     color: white;
 }
 
+.contain a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contain a:hover {
+    text-decoration: none;
+}
+
 
 
 

@@ -5,6 +5,7 @@ import "./More.css"
 import headVideo from "../videos/backgroundVideo.mp4"
 import plasticBeachWaste from "../images/plasticBeachWaste.jpg"
 import "animate.css"
+import Navigation from '../Navigation.js'
 
 
 const More = () => {
@@ -22,6 +23,7 @@ const More = () => {
 
     return (
         <div>
+            <Navigation />
             <div className="headImage" style={{
                 backgroundSize: 160 - offsetY / 12 + "%",
                 opacity: 1 - offsetY / 700,

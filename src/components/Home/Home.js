@@ -21,6 +21,7 @@ const Home = () => {
     setIsActive(!isActive);
   }
 
+
   return (
     <div>
       <section className={!isActive ? "showcase": "showcase active"}>
