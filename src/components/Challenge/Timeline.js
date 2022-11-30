@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 
 import TimelineObserver from "react-timeline-animation";
 import { fireConfetti } from "./confetti";
@@ -17,10 +17,9 @@ const Timeline = ({ setObserver, callback }) => {
   const circle2 = useRef(null);
   const circle3 = useRef(null);
 
-  const someCallback = () => {
+  const someCallback = useCallback(() => {
     setMessage1("100,000 Plants Planted by 2030");
-    callback();
-  };
+  }, []);
 
   const someCallback2 = () => {
     setMessage2("200,000 Plants Planted by 2050");
@@ -38,7 +37,7 @@ const Timeline = ({ setObserver, callback }) => {
     setObserver(circle1.current, someCallback);
     setObserver(circle2.current, someCallback2);
     setObserver(circle3.current, someCallback3);
-  }, []);
+  }, [setObserver, someCallback])
 
   return (
     <div className="wrapper">
@@ -68,7 +67,7 @@ const Timeline = ({ setObserver, callback }) => {
 };
 
 export default function App() {
-  const [message, setMessage] = useState("");
+  const message = ""
 
   const onCallback = () => {
     console.log("awesome");

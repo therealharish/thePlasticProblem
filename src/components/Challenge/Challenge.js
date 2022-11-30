@@ -3,10 +3,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import "./Challenge.css"
 import mangrove from '../images/mangrove.png'
-import { useState } from 'react';
 import DonationForm from './DonationForm';
 import Timeline from './Timeline.js';
-import tick from '../icons/tick.png'
 import Navigation from '../Navigation'
 
 const Challenge = () => {

@@ -2,8 +2,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import "./Action.css"
-import headVideo from "../videos/backgroundVideo.mp4"
-import actionheadImage from "../images/headImage.jpg"
 import SignIn from './SingIn'
 import Navigation from '../Navigation'
 
