@@ -6,8 +6,6 @@ import backgroundVideo from '../videos/backgroundVid2.mp4'
 import facebook from '../icons/facebook.png'
 import instagram from '../icons/instagram.png'
 import twitter from '../icons/twitter.png'
-import More from "../More/More";
-import {Link} from "react-router-dom"
 import Nav from '../Nav/Nav'
 import 'animate.css'
 
@@ -40,17 +38,17 @@ const Home = () => {
 
         <ul class="social">
           <li>
-            <a href="#">
+            <a href="www.facebook.com">
               <img src={facebook} alt="" width="20" height="20" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="www.instagram.com">
               <img src={instagram} alt="" width="20" height="20" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="www.twitter.com">
               <img src={twitter} alt="" width="20" height="20" />
             </a>
           </li>

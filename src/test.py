@@ -1,54 +1,25 @@
-#!/bin/python3
+from math import *
 
-import math
-import os
-import random
-import re
-import sys
-
-#
-# Complete the 'winningLotteryTicket' function below.
-#
-# The function is expected to return a LONG_INTEGER.
-# The function accepts STRING_ARRAY tickets as parameter.
-#
-
-def findMask(num):
-    mask = 0
-    for j in num:
-        mask = mask | (1 << (ord(j) - ord('0')))
-    return mask
-    
-def winningLotteryTicket(tickets):
-    mask = [0]*1024
-    for i in tickets:
-        m = findMask(i)
-        mask[m]+=1
-    
-    ans = 0
-    for i in range(len(mask)):
-        for j in range(i+1, len(mask)):
-            if(i|j == 1023):
-                ans+=mask[i]*mask[j]
-    if(mask[1023]):
-        ans+=math.comb(mask[1023], 2)
-    return ans
+arr = [19, 56, 28, 20, 14, 1, 11, 7, 5, 3]
+arr = [8,3,9,12,15]
+dp = [0]*len(arr)
+dp[0] = 1
+for i in range(1, len(arr)):
+    dp[i]=dp[i-1]+1
+    j = 0
+    while(j<i):
+        if(gcd(arr[i], arr[j])>1):
+            if(j>0):
+                dp[i] = dp[j-1]+1
+            else:
+                dp[i] = dp[j]
                 
-        
+            break
+        j+=1
+print(dp)
+print(dp[-1])
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    n = int(input().strip())
-
-    tickets = []
-
-    for _ in range(n):
-        tickets_item = input()
-        tickets.append(tickets_item)
-
-    result = winningLotteryTicket(tickets)
-
-    fptr.write(str(result) + '\n')
-
-    fptr.close()
+            
+    
+    
+    

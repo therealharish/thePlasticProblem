@@ -2,7 +2,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import "./More.css"
-import headVideo from "../videos/backgroundVideo.mp4"
 import plasticBeachWaste from "../images/plasticBeachWaste.jpg"
 import "animate.css"
 import Navigation from '../Navigation.js'

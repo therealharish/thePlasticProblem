@@ -6,7 +6,7 @@ const Nav = () => {
                 <li><a href="/more">More</a></li>
                 <li><a href="/action">Action</a></li>
                 <li><a href="/challenge">Challenge</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="/aboutus">About</a></li>
             </ul>
         </div>
     );

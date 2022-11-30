@@ -47,5 +47,6 @@
     min-width: 150px;
     padding-left: 20px;
     font-weight: bold;
+    transition: 0.5s;
   }
   
